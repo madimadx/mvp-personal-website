@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>Madi Maddox</title>
+
+    <link rel="icon" href="icon.png" type="image/png"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel='icon' href='./assets/m-fav.png'/>
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/7.0.0/firebase-app.js"></script>
@@ -14,52 +19,222 @@
     <script defer src="/__/firebase/7.0.0/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
+        <style>
+          * {
+            font-family: 'Rubik', sans-serif;
+          }
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+          .intro {
+            font-size: 4em;
+          }
+
+          .bio {
+            font-size: 2.1em;
+          }
+
+          .norm {
+            font-size: 1.8em;
+          }
+
+          .page-wrapper {
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+          }
+
+          .page {
+            padding-top: 8%;
+            padding-left: 10%;
+            width: 80%;
+            height: 70%;
+            overflow: hidden;
+            align: center;
+            display: flex;
+            justify-content: space-between;
+          }
+
+          .content-left {
+            flex-grow: 1;
+            width: 60%;
+            height: 100%;
+            padding-right: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+
+          .content-right {
+            flex-grow: 1;
+            width: 40%;
+            height: 100%;
+            flex-basis: 30%;
+          }
+
+          img {
+            margin-right: 40px;
+            height: 100%;
+          }
+
+          a {
+            color: #000000;
+          }
+
+          a:hover {
+            color: #0234F2;
+          }
+
+          .b {
+            font-weight: 600;
+          }
+
+          #email:hover, #phone:hover {
+            color: #0234F2;
+          }
+
+          @media only screen and (max-width: 1650px) {
+            .intro {
+              font-size: 3.4em;
+            }
+
+            .bio {
+              font-size: 1.8em;
+            }
+
+            .norm {
+              font-size: 1.6em;
+            }
+            .page {
+              padding-top: 10%;
+            }
+          }
+
+          @media only screen and (max-width: 1250px) {
+            .page {
+              padding-top: 15%;
+            }
+
+            .intro {
+              font-size: 3.2em;
+            }
+
+            .bio {
+              font-size: 1.6em;
+            }
+
+            .norm {
+              font-size: 1.4em;
+            }
+
+            .content-right {
+              width: 20%;
+              height: 100%;
+              overflow: hidden;
+              position: relative;
+            }
+
+            img {
+              right: -85%;
+              height: 100%;
+              position: absolute;
+            }
+          }
+
+          @media only screen and (max-width: 875px) {
+            img {
+              right: -105%;
+            }
+          }
+
+          @media only screen and (max-width: 750px) {
+            img {
+              display: none;
+            }
+            .content-right {
+              display: none;
+            }
+            .page {
+              padding-top: 13%;
+              height: 77%;
+            }
+            img {
+              right: -85%;
+            }
+          }
+
+          @media only screen and (max-width: 500px) {
+            .intro {
+              font-size: 2.9em;
+            }
+
+            .bio {
+              font-size: 1.4em;
+            }
+
+            .norm {
+              font-size: 1.2em;
+            }
+
+            .page {
+              padding-top: 15%;
+            }
+          }
+
+        </style>
+
+
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <div class="page-wrapper">
+    <div class="page">
+
+      <div class="content-left">
+
+        <div class="intro b">
+          Hi, I'm Madi.
+          </div>
+
+        <div class="bio">
+          I live at the intersection of <span class="b" style="color: #0234F2;">code
+          </span> and <span class="b" style="color: #E43200;">design</span>,
+          continuously learning how to better utilize <span class="b" style="color: #00B981;">
+            design thinking</span> and <span class="b" style="color: #FDD700;">
+              empathetic problem solving</span> to improve your experiences.
+          </div>
+
+        <div class="norm">
+          I also like to help make things happen – things like <a href="./assets/CUhackit2019ImpactReport.pdf" target="_blank">CUhackit</a>,
+          <a href="https://www.tedxclemsonu.com/" target="_blank">TEDxClemsonU</a>, <a href="./assets/Makerday5CaseStudy.pdf" target="_blank">Makerday</a>, and
+          <a href="https://mailroom.city/" target="_blank">MailRoom</a>.
+          </div>
+
+        <div class="norm">
+          Here is my <a href="https://www.linkedin.com/in/madisonmaddox/" target="_blank">LinkedIn</a>,
+          <a href="https://www.instagram.com/madimadx/" target="_blank">IG</a>,
+          <a href="https://github.com/madimadx" target="_blank">GitHub</a>, and
+          <a href="./assets/MaddoxResumeColor.pdf" target="_blank">Resumé</a>.
+          </div>
+
+        <div class="norm">
+          Drop me an email at <span id="email">madisonmmaddox@gmail.com</span>.
+          </div>
+
+        <div class="norm">
+          Cheers!
+        </div>
+
+        <div class="norm" style="color: #999">
+          P.S. I also enjoy film photography, rock climbing, and playing violin.
+        </div>
+
+      </div>
+
+      <div class="content-right">
+        <img src="./assets/blue-bySamOzanich.jpg">
+      </div>
+
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
   </body>
 </html>
